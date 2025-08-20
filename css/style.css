@@ -190,7 +190,7 @@ transition: 0.4s;
    
 }
 .massig .m-2{
-       color: rgb(108, 117, 125) !important;
+       color: rgb(108, 117, 125);
        width: 84%;
 }
 .m{
@@ -339,7 +339,7 @@ h5{
     margin: 20px 0px 20px 0px;
 }
 main {
-   background-image: url("./icon/1755377185548.png") !important;
+   background-image: url("./../icon/1755377185548.png") !important;
    background-repeat: no-repeat;
    background-position-x:150%;
    height: 530px ;
