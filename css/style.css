@@ -1,0 +1,619 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+body {
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+* {
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+
+h1 ,h2{
+color: rgb(234, 235, 233);
+font-size: 40px;
+
+}
+nav ul li a:hover {
+color: red;
+}
+nav ul li {
+display: inline-block;
+margin: 0.8rem 1.5rem;
+
+}
+.index-nav{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+header{
+background-color: #4371b327; 
+text-transform: capitalize;
+font-weight: bold;
+display:flex;
+position: relative;
+flex-direction: row;
+justify-content: space-between;
+
+}
+.bt {
+width: 100px;
+height: 40px;
+border-radius: 30px;
+border: none;
+background-color: transparent;
+transition: 0.3s;
+cursor: pointer;
+position:absolute;
+top: 10px;
+right:1%;
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+.bt a {
+text-decoration: none;
+color: #0A4D8C;
+font-weight: bold;
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+.bt:hover {
+border: 1px solid red;
+}
+nav ul li a {
+color: #0A4D8C;
+text-decoration: none;
+transition: 0.4s;
+}
+.sreach{
+    
+   position: relative;
+   width: 250px;
+   margin: 10px 10px 10px 0px;
+   border: 1px solid transparent;
+   border-radius: 20px;
+    
+}
+#sre{
+   width: 100%;
+   height: 45px;
+   border:none;
+   outline: none;
+   padding: 8px 35px 8px 8px;
+   border-radius: 20px;
+   
+}
+.sreach img{
+    border: none;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+       
+}
+.sreach:hover{
+    border: 1px solid red;
+    transition: .4s;
+}
+/* الملف الشخصي */
+.maran{
+    width: 50px;
+    float:right;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    right: 130px;
+    
+   
+}
+.profile{
+    display:none;
+    flex-direction: column;
+    background-color: aliceblue;
+    width: 200px;
+    height: 160px;
+    /* padding: 20px 10px; */
+    position: absolute;
+    top: 130%;
+    right: 50px;
+    border-radius: 5px;
+    z-index: 1;
+    
+}
+
+.profile p{
+    padding: 10px;
+   display: flex;
+   gap: 8px;
+   /* margin: 5px 0; */
+}
+.img-header .profile img{
+    width: 18px;
+    
+   
+}
+.profile p:hover{
+    background-color: rgb(177, 181, 184);
+}
+.toimg{
+    display: none;
+}
+.toimg:checked+label+ .profile{
+    display:flex;
+    transform: scale(1.2);
+    transition: .4s;
+    
+}
+/* الرسائل */
+.msg{
+    width: 25px;
+    height: 25px;
+     float:right;
+    position: absolute;
+    top: 40%;
+    right: 200px;
+}
+.tomsg{
+    display: none;
+}
+.massig{
+       display:none;
+    flex-direction: column;
+    background-color: aliceblue;
+    justify-content: space-around;
+    width: 250px;
+    height: 350px;
+    /* padding: 20px 10px; */
+    position: absolute;
+    top: 150%;
+    right: 150px;
+    border-radius: 5px;
+    z-index: 1;
+}
+.massig div h6{
+       color: rgb(108, 117, 125) !important;
+}
+.massig-1 .massig img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 5px ;
+   
+}
+
+.massig div {
+   display:flex;
+   font-size: 10px;
+   flex-wrap: wrap;
+   border: 1px solid rgba(0, 0, 0, 0.125);
+   border: none;
+   
+}
+.massig .m-2{
+       color: rgb(108, 117, 125) !important;
+       width: 84%;
+}
+.m{
+   flex-wrap: wrap;
+   height: 70px;
+}
+.m-1{
+    
+    width: 16%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    
+}
+
+.m-3{
+    width: 100%;
+    height: 20px;   
+    color: #000;
+    font-weight: 20px;
+}
+.massig .m:hover{
+    background-color: rgb(177, 181, 184);
+}
+.tomsg:checked+label+ .massig {
+    display:flex;
+    transform: scale(1.2);
+    transition: .4s;
+    
+}
+/* الجرس */
+.bell{
+    width: 25px;
+    height: 25px;
+     float:right;
+    position: absolute;
+    top: 40%;
+    right: 240px;
+    
+   
+}
+.tobell{
+    display: none;
+}
+
+.bell-2{
+    display:none;
+    flex-direction: column;
+    background-color: aliceblue;
+    justify-content: space-around;
+    width: 250px;
+    height: 350px;
+    /* padding: 20px 10px; */
+    position: absolute;
+    top: 150%;
+    right: 230px;
+    border-radius: 5px;
+    z-index: 1;
+}
+h5{
+    text-align: center;
+    font-weight: 100;
+   
+}
+.bell-2 div {
+   display:flex;
+   font-size: 10px;
+   flex-wrap: wrap;
+   border: 1px solid rgba(0, 0, 0, 0.125);
+   border: none;
+   
+}
+.bell-2 .i-2{
+       color: rgb(108, 117, 125) !important;
+      
+}
+.i{
+   flex-wrap: wrap;
+   height: 70px;
+}
+.i-1{
+    
+    width: 16%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    
+}
+.i-2{
+    width: 84%;
+
+}
+.i-3{
+    width: 100%;
+    height: 20px;   
+    color: #000;
+    font-weight: 20px;
+}
+
+.bell-2 .i:hover{
+    background-color: rgb(177, 181, 184);
+}
+.tobell:checked+label+ .bell-2 {
+    display:flex;
+    transform: scale(1.2);
+    transition: .4s;
+    
+}
+.top4{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0.1rem 0.2rem; 
+    display: block; 
+    height: 18px;
+    width: 18px;
+    top: 30%;
+    right: 235px;
+    text-align: center;
+    font-size: 0.675rem;
+    color: rgb(255, 255, 255);
+    background: rgb(59, 125, 221);
+    border-radius: 50%;
+    padding: 1px;
+    position: absolute;
+   transition: 0.3s;
+    z-index: 1;
+    }
+.bell-1:hover .top4{
+    top:20%;
+}
+.hr div{
+    width: 30px;
+    margin-top: 3px;
+    display: flex;
+    border: 2px solid rgb(2, 0, 0);
+}
+.hr{
+   margin: 20px 0 20px 10px;
+}
+.hr:hover{
+     transform: scale(1.2);
+    transition: 0.4s;
+}
+.digital img{
+    width: 50px;
+    margin: 20px 0px 20px 0px;
+}
+main {
+   background-image: url("./icon/1755377185548.png") !important;
+   background-repeat: no-repeat;
+   background-position-x:150%;
+   height: 530px ;
+   
+   display: flex;
+   position: relative;
+   justify-content:left;
+}
+.tita {
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    text-align:center;
+    position: absolute;
+    top: 32%;
+    width: 420px;
+    height: 150px;
+    margin: 20px;
+    background-color:#4371b327;  
+    border-radius: 20px;
+}
+.weekly{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 200px;
+    height: 150px;
+    background-color:#4371b327; 
+    top: 4%;
+    left: 2%;
+    border-radius: 10px;
+}
+.weekly-taitle{ 
+    text-align:center;
+    font-weight: bold;
+    color: #0A4D8C;
+}
+.weekly-price{
+   text-align: right;
+    margin: 0px 5px 0 0;
+    font-size:x-large;
+    font-weight: bolder;
+    color: #4a4a4a;
+}
+.weekly-text ,.weekly-text-2{
+     text-align: right;
+      font-weight: bolder;
+     color: #4a4a4a;
+     margin-top: 10px;
+}
+.weekly-button{
+    display: flex;
+    justify-content: center;
+   
+}
+.weekly-button input{
+    background-color:  #1cbb8c;
+     width: 100px;
+     height: 25px;
+     margin-top: 5px;
+     color: aliceblue;
+     border: none;
+}
+.price{
+    color: #1cbb8c;
+}
+.monthly{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 200px;
+    height: 150px;
+    background-color:#4371b327; 
+    top: 4%;
+    left: 19%;
+    border-radius: 10px;
+}
+.monthly-taitle{
+    text-align: center;
+    font-weight: bold;
+    color: #0A4D8C;
+}
+.monthly-price{
+   text-align: right;
+    margin: 0px 5px 0 0;
+    font-size:x-large;
+    font-weight: bolder;
+    color: #4a4a4a;
+}
+.monthly-text ,.monthly-text-2{
+     text-align: right;
+      font-weight: bolder;
+     color: #4a4a4a;
+     margin-top: 10px;
+}
+.monthly-button{
+    display: flex;
+    justify-content: center;
+   
+}
+.monthly-button input{
+    background-color:  #1cbb8c;
+     width: 100px;
+     height: 25px;
+     margin-top: 5px;
+     color: aliceblue;
+     border: none;
+}
+.yearly{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 200px;
+    height: 150px;
+    background-color:#4371b327; 
+    top: 68%;
+    left: 2%;
+    border-radius: 10px;
+}
+.yearly-taitle{
+    text-align: center;
+    font-weight: bold;
+    color: #0A4D8C;
+}
+.yearly-price{
+   text-align: right;
+    margin: 0px 5px 0 0;
+    font-size:x-large;
+    font-weight: bolder;
+    color: #4a4a4a;
+}
+.yearly-text ,.yearly-text-2{
+     text-align: right;
+      font-weight: bolder;
+     color: #4a4a4a;
+     margin-top: 10px;
+}
+.yearly-button{
+    display: flex;
+    justify-content: center;
+   
+}
+.yearly-button input{
+    background-color:  #1cbb8c;
+     width: 100px;
+     height: 25px;
+     margin-top: 5px;
+     color: aliceblue;
+     border: none;
+}.lifetime{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 200px;
+    height: 150px;
+    background-color:#4371b327; 
+    top: 68%;
+    left: 19%;
+    border-radius: 10px;
+}
+.lifetime-taitle{
+    text-align: center;
+    font-weight: bold;
+    color: #0A4D8C;
+}
+.lifetime-price{
+   text-align: right;
+    margin: 0px 5px 0 0;
+    font-size:x-large;
+    font-weight: bolder;
+    color: #4a4a4a;
+}
+.lifetime-text ,.lifetime-text-2{
+     text-align: right;
+      font-weight: bolder;
+     color: #4a4a4a;
+     margin-top: 10px;
+}
+.lifetime-button{
+    display: flex;
+    justify-content: center;
+   
+}
+.lifetime-button input{
+    background-color: #1cbb8c;
+     width: 100px;
+     height: 25px;
+     margin-top: 5px;
+     color: aliceblue;
+     border: none;
+}
+
+ footer  {
+background-color: rgb(162, 190, 205);
+height: 100px;
+text-align: center;
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+.media a img {
+width: 2.3rem;
+padding: 5px;
+margin: 20px;
+}
+.media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}.media a:hover{
+    transform: scale(1.2);
+    transition: 0.4s;
+}
+/*courses*/                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+.card {
+height: 280px;
+width: 150px;
+background-color: #3b0101;
+border-radius: 15px;
+box-shadow: -1rem 0 3rem #000;
+transition: 0.4s ease-out;
+position: relative;
+margin-top: 150px;
+text-align:center;
+
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+.card:NOT(:first-child) {
+margin-left: -50px;
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+.card:hover {
+transform: translate(20px);
+transition: 0.4s ease-out;
+height: 550px;
+width: 300px;
+margin-top: 10px;
+stroke: white;
+z-index: 1;
+box-shadow: -1rem 0 3rem #000,1rem 0 3rem #000;
+text-align: center;
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+.card:hover~.card {
+left: 50px;
+transition: 0.4s ease-out;
+
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+.title {
+color: white;
+position: absolute;
+text-align: center;
+left: 20%;
+top: 20px;
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+.container {
+display: flex;
+justify-content: center;
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+.stroke {
+stroke-width: 3px;
+fill: #3b0101;
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+.cou {
+background: #17141d;
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+.info {
+text-align: center;
+}
+
+
